@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GeoTracker</string>
+    <string name="api_key">AIzaSyBTQoLHY20Jtwg0oknDgJ8M2sDyv8G3rs4</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="startTimeText">Start Time</string>
+    <string name="finishTimeText">Finish Time</string>
+    <string name="distanceText">Distance</string>
+    <string name="durationText">Duration</string>
+    <string name="speedText">Speed</string>
+    <string name="defaultTime">00:00</string>
+    <string name="defaultMovement">Cycle</string>
+    <string name="defaultDistance">0000m</string>
+    <string name="defaultDuration">00:00:00</string>
+    <string name="defaultSpeed">00.0 kmph</string>
+    <string name="defaultDatetime">00/00/00 00:00</string>
+    <string name="defaultweather">Cloudy</string>
+    <string name="addNotes">Add Notes</string>
+    <string name="weather">Weather</string>
+    <string name="weatherOption1">Sunny</string>
+    <string name="weatherOption2">Cloudy</string>
+    <string name="weatherOption3">Rainy</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="options">Options</string>
+    <string name="data">Data</string>
+    <string name="update">Update</string>
+    <string name="back">Back</string>
+    <string name="no_data">NO DATA AVAILABLE</string>
+</resources>

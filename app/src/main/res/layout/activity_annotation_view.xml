@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AnnotationView">
+
+    <TextView
+        android:id="@+id/displayRecordingDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/defaultDatetime"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayMovementType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/defaultMovement"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/finishTimeText"
+        app:layout_constraintEnd_toStartOf="@+id/finishTimeText" />
+
+    <TextView
+        android:id="@+id/displayStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/defaultTime"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/startTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeText" />
+
+    <TextView
+        android:id="@+id/displayFinishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/defaultTime"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/finishTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/finishTimeText" />
+
+    <TextView
+        android:id="@+id/displayDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/defaultTime"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/durationText"
+        app:layout_constraintTop_toBottomOf="@+id/durationText" />
+
+    <TextView
+        android:id="@+id/displaySpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/defaultSpeed"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/addNotesText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/displayDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/defaultDistance"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/distanceText"
+        app:layout_constraintTop_toBottomOf="@+id/distanceText" />
+
+    <TextView
+        android:id="@+id/startTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/startTimeText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/displayMovementType"
+        app:layout_constraintTop_toBottomOf="@+id/displayMovementType" />
+
+    <TextView
+        android:id="@+id/finishTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="59dp"
+        android:text="@string/finishTimeText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/speedText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/distanceText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/displayStartTime"
+        app:layout_constraintStart_toStartOf="@+id/displayStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/displayStartTime" />
+
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/durationText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/displaySpeed"
+        app:layout_constraintEnd_toStartOf="@+id/displayFinishTime" />
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="@string/speedText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/displaySpeed"
+        app:layout_constraintEnd_toEndOf="@+id/displayFinishTime"
+        app:layout_constraintStart_toEndOf="@+id/displayFinishTime" />
+
+    <TextView
+        android:id="@+id/addNotesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/addNotes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/notesInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/notesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/weatherText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/weather"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cloudyButton"
+        app:layout_constraintStart_toStartOf="@+id/cloudyButton" />
+
+    <Button
+        android:id="@+id/sunnyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onSunnyButton"
+        android:text="@string/weatherOption1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cloudyButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cloudyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onCloudyButton"
+        android:text="@string/weatherOption2"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/sunnyButton" />
+
+    <Button
+        android:id="@+id/rainyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onRainyButton"
+        android:text="@string/weatherOption3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cloudyButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onDeleteButton"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cloudyButton"
+        app:layout_constraintStart_toStartOf="@+id/distanceText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onSaveButton"
+        android:text="@string/save"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/options"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
